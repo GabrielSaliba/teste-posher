@@ -19,7 +19,7 @@ function executarT1() {
     return;
   }
 
-  alert(isSubsequent(array1, array2));
+  alert(`Resultado: ${isSubsequent(array1, array2)}`);
 }
 
 function executarT2() {
@@ -65,6 +65,7 @@ function isSubsequent(values, sequence) {
 
   return true;
 }
+
 function removeDuplicates(values) {
   for (let i = 0; i <= values.length; i++) {
     let valorSucessor = values[i + 1];
