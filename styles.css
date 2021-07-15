@@ -1,0 +1,29 @@
+body {
+  font-family: Noto Sans;
+  padding: 5rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 15rem;
+}
+
+h1 {
+  background: #bababa;
+  padding: 1.5rem;
+}
+
+button {
+  position: absolute;
+  right: 49%;
+  margin-top: 5rem;
+}

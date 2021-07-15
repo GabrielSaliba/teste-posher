@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Testes | Gabriel</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Teste 1</h1>
+      <p>
+        Dado dois arrays de inteiros não vazios, determine se os valores do
+        segundo array estão na mesma ordem no primeiro array.
+      </p>
+    </div>
+    <div style="margin-bottom: 15rem">
+      <div class="content">
+        <span>
+          <p>Array 1</p>
+          <input
+            id="input1_t1"
+            type="text"
+            value="5 1 22 25 6 -1 8 10"
+            placeholder="Inserir valor..."
+          />
+        </span>
+        <span>
+          <p>Array 2</p>
+          <input id="input2_t1" type="text" placeholder="Inserir valor..." />
+        </span>
+      </div>
+      <button id="btn_t1" onclick="executarT1()">Executar</button>
+    </div>
+    <div class="header">
+      <h1>Teste 2</h1>
+      <p>
+        Dado um array de strings não vazio, remova os dados duplicados em
+        sequência.
+      </p>
+    </div>
+    <div style="margin-bottom: 15rem">
+      <div class="content">
+        <span>
+          <p>Array</p>
+          <input id="input1_t2" type="text" placeholder="Inserir valores..." />
+        </span>
+      </div>
+      <button onclick="executarT2()">Executar</button>
+    </div>
+    <div class="header">
+      <h1>Teste 3</h1>
+      <p>
+        Dado um array de strings não vazio, retorna um array de booleans
+        indicando se a string é ou não um palíndromo.
+      </p>
+    </div>
+    <div style="margin-bottom: 15rem">
+      <div class="content">
+        <span>
+          <p>Array</p>
+          <input id="input1_t3" type="text" placeholder="Inserir valores..." />
+        </span>
+      </div>
+      <button onclick="executarT3()">Executar</button>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
