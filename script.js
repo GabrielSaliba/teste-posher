@@ -57,10 +57,18 @@ function checkPalindromes(value) {
 }
 
 function isSubsequent(values, sequence) {
-  if (sequence.length != values.length) return false;
+  if (sequence.length > values.length) return false;
 
-  for (let i = 0; i <= values.length; i++) {
-    if (values[i] !== sequence[i]) return false;
+  for (let i = 0; i < sequence.length; i++) {
+    if (!values.includes(sequence[i])) return false;
+  }
+
+  let indexes = [];
+
+  for (let i = 0; i < sequence.length; i++) {
+    let index = values.indexOf(sequence[i]);
+    if (indexes.find((item) => item > index)) return false;
+    indexes.push(index);
   }
 
   return true;
